@@ -1,6 +1,6 @@
 _chef_client_ruby="core/ruby31"
 pkg_name="test-kitchen"
-pkg_origin="chef"
+pkg_origin="ngupta26"
 pkg_maintainer="The Chef Maintainers <humans@chef.io>"
 pkg_description="The Chef Test Kitchen"
 pkg_license=('Apache-2.0')
@@ -12,6 +12,7 @@ pkg_build_deps=(
   core/make
   core/gcc
   core/git
+  core/which
 )
 pkg_deps=(
   $_chef_client_ruby
