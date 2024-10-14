@@ -13,7 +13,7 @@ steps:
     commands:
       - sleep 60
     expeditor:
-    executor:
-      docker:
-        image: ruby:3.1
-        privileged: true
+      executor:
+        docker:
+          image: ruby:3.1
+          privileged: true
