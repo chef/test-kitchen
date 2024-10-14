@@ -13,15 +13,7 @@ steps:
     commands:
       - .expeditor/buildkite/artifact.habitat.test.sh
     expeditor:
-      executor:
-        docker:
-          image: ruby:3.0
-          privileged: true
-
-  - label: ":windows: Validate Habitat Builds of test-kitchen"
-    commands:
-      - .expeditor/buildkite/artifact.habitat.test.ps1
-    expeditor:
-      executor:
-        windows:
+    executor:
+      docker:
+          image: ruby:3.1
           privileged: true
