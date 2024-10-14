@@ -33,6 +33,11 @@ subscriptions:
           ignore_labels:
             - "Expeditor: Skip Changelog"
             - "Expeditor: Skip All"
+      - trigger_pipeline:habitat/test:
+        only_if: built_in:bump_version
+        ignore_labels:
+         - "Expeditor: Skip Habitat"
+         - "Expeditor: Skip All"
 
   - workload: project_promoted:{{agent_id}}:*
     actions:
